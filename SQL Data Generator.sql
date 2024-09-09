@@ -1,10 +1,11 @@
-﻿CREATE TABLE [dbo].[Employees]
-(
-[EmployeeID] [int] NOT NULL,
-[FirstName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-[LastName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-[Department] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
-) ON [PRIMARY]
+CREATE DATABASE SQLDataGenerator;
 GO
-ALTER TABLE [dbo].[Employees] ADD CONSTRAINT [PK__Employee__7AD04FF1DA86D751] PRIMARY KEY CLUSTERED ([EmployeeID]) ON [PRIMARY]
+USE SQLDataGenerator;
+GO
+CREATE TABLE Employees (
+    EmployeeID INT,
+    FirstName CHAR(50),
+    LastName CHAR(50),
+    Department CHAR(50)
+);
 GO
